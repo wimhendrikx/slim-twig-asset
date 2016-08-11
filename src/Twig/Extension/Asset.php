@@ -51,7 +51,6 @@ class Asset extends \Twig_Extension
     }
 
     /**
-     *
      * @return \Twig_SimpleFunction[]
      */
     public function getFunctions()
