@@ -1,5 +1,7 @@
 # Asset Extension for Slim Framework Twig View
 
+[![Build Status](https://travis-ci.org/slimphp/Twig-View.svg?branch=master)](https://travis-ci.org/slimphp/Twig-View)
+
 This is a Slim Framework view helper that provides support for Symfony Assets in the Slim Twig View extension.
 
 ## Install
