@@ -1,8 +1,10 @@
 # Asset Extension for Slim Framework Twig View
 
-[![Build Status](https://travis-ci.org/slimphp/Twig-View.svg?branch=master)](https://travis-ci.org/slimphp/Twig-View)
+[![Build Status](https://api.travis-ci.org/careysizer/slim-twig-asset.svg?branch=master)](https://travis-ci.org/careysizer/slim-twig-asset)
+[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/careysizer/slim-twig-asset/blob/master/LICENSE.md)
 
-This is a Slim Framework view helper that provides support for Symfony Assets in the Slim Twig View extension.
+
+This is a [Slim Framework](https://github.com/slimphp/Slim) view helper that provides support for [Symfony Assets](https://github.com/symfony/asset) in the [Slim Twig View](https://github.com/slimphp/Twig-View) extension.
 
 ## Install
 
@@ -53,9 +55,8 @@ $container['assetPackages'] = function ($c) {
 * Register Twig View helper
 */
 $container['view'] = function ($c) {
-$view = new \Slim\Views\Twig('path/to/templates', [
-    'cache' => 'path/to/cache'
-]);
+    $view = new \Slim\Views\Twig('path/to/templates');
+}
 
 /**
 * Add the Slim Twig Extension
@@ -88,13 +89,7 @@ $container['assetTwigExtension'] = function ($c) {
 * @return \Slim\Views\Twig
 */
 $container['view'] = function ($c) {
-    $settings = $c->get('settings')['view'];
-    $twigSettings = [];
-    if ($c->get('settings')['mode'] !== 'dev') {
-        $twigSettings = ['cache' => $settings['cache_path']];
-    }
-    $view = new \Slim\Views\Twig($settings['template_path'], $twigSettings);
-    $view->offsetSet('session', $c->get('session'));
+    $view = new \Slim\Views\Twig($settings['template_path']);
     foreach (['slimTwigExtension', 'assetTwigExtension'] as $extension) {
         $view->addExtension($c->get($extension));
     }

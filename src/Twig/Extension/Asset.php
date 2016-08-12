@@ -18,7 +18,6 @@ class Asset extends \Twig_Extension
     protected $packages;
 
     /**
-     *
      * @param Packages $packages
      */
     public function __construct(Packages $packages)
