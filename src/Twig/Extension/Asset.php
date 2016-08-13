@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * Slim Twig Asset Extension
+ *
+ * @link      https://github.com/careysizer/slim-twig-asset
+ * @copyright Copyright (c) 2016 Carey Sizer
+ * @license   https://github.com/careysizer/slim-twig-asset/blob/master/LICENSE.md (MIT License)
+ */
 namespace Carey\Twig\Extension;
 
 use Symfony\Component\Asset\Packages;

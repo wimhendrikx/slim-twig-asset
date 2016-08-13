@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * Slim Twig Asset Extension
+ *
+ * @link      https://github.com/careysizer/slim-twig-asset
+ * @copyright Copyright (c) 2016 Carey Sizer
+ * @license   https://github.com/careysizer/slim-twig-asset/blob/master/LICENSE.md (MIT License)
+ */
 namespace Carey\Tests\Twig\Extension;
 
 use Carey\Twig\Extension;
@@ -15,7 +21,7 @@ class TwigTest extends \PHPUnit_Framework_TestCase
     public function testGetName()
     {
         $extension = new \Carey\Twig\Extension\Asset(new Packages());
-        $this->assertEquals("asset", $extension->getName());
+        $this->assertEquals('asset', $extension->getName());
     }
 
     /**
@@ -43,6 +49,6 @@ class TwigTest extends \PHPUnit_Framework_TestCase
     public function testGetFunctions()
     {
         $extension = new \Carey\Twig\Extension\Asset(new Packages());
-        $this->assertContainsOnly('\Twig_SimpleFunction', $extension->getFunctions());
+        $this->assertContainsOnly(\Twig_SimpleFunction::class, $extension->getFunctions());
     }
 }
