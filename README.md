@@ -1,7 +1,7 @@
 # Asset Extension for Slim Framework Twig View
 
-[![Build Status](https://api.travis-ci.org/careysizer/slim-twig-asset.svg?branch=master)](https://travis-ci.org/careysizer/slim-twig-asset)
-[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/careysizer/slim-twig-asset/blob/master/LICENSE.md)
+[![Build Status](https://api.travis-ci.org/careys7/slim-twig-asset.svg?branch=master)](https://travis-ci.org/careys7/slim-twig-asset)
+[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/careys7/slim-twig-asset/blob/master/LICENSE.md)
 
 
 This is a [Slim Framework](https://github.com/slimphp/Slim) view helper that provides support for [Symfony Assets](https://github.com/symfony/asset) in the [Slim Twig View](https://github.com/slimphp/Twig-View) extension.
@@ -11,7 +11,7 @@ This is a [Slim Framework](https://github.com/slimphp/Slim) view helper that pro
 Via [Composer](https://getcomposer.org/)
 
 ```bash
-$ composer require careysizer/slim-twig-asset
+$ composer require careys7/slim-twig-asset
 ```
 
 Requires Slim Framework 3 and PHP 5.5.0 or newer.
