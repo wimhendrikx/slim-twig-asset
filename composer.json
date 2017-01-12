@@ -1,5 +1,5 @@
 {
-    "name": "careysizer/slim-twig-asset",
+    "name": "careys7/slim-twig-asset",
     "description": "Slim Framework extension which adds Symfony Asset support into Slim Twig View",
     "license": "MIT",
     "require": {
@@ -8,8 +8,7 @@
     },
     "authors": [
         {
-            "name": "Carey Sizer",
-            "email": "careysizer@gmail.com"
+            "name": "Carey"
         }
     ],
     "autoload": {
