@@ -3,8 +3,8 @@
     "description": "Slim Framework extension which adds Symfony Asset support into Slim Twig View",
     "license": "MIT",
     "require": {
-        "symfony/asset": "3.0",
-        "slim/twig-view": "2.1"
+        "symfony/asset": "^3.0",
+        "slim/twig-view": "^2.1"
     },
     "authors": [
         {
