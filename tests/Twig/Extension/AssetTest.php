@@ -13,7 +13,7 @@ use Symfony\Component\Asset\Packages;
 
 require dirname(__DIR__) . '/../../vendor/autoload.php';
 
-class TwigTest extends \PHPUnit_Framework_TestCase
+class TwigTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @covers \Carey\Twig\Extension\Asset::getName()
